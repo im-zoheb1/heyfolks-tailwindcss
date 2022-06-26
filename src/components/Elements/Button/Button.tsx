@@ -5,7 +5,7 @@ interface Props {
   pilled?: boolean;
   type?: "submit" | "reset";
   variant?: "primary" | "light";
-  children: React.ReactNode;
+  children?: React.ReactNode;
   className?: string;
   transformOnHover?: boolean;
 }

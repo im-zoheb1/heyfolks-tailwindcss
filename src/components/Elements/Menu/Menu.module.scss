@@ -1,0 +1,26 @@
+.nav {
+  &_list {}
+  &_item {}
+  &_link {
+    transition: all .3s ease-in-out;
+  }
+}
+
+.active {
+  transition: all .3s ease-in-out;
+  position: relative;
+  @apply bg-indigo-100;
+  &::after {
+    content: '';
+    display: table;
+    position: absolute;
+    height: 70%;
+    width: 5px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    @apply bg-secondary;
+  }
+}
