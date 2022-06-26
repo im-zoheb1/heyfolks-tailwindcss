@@ -38,9 +38,6 @@ const Menu: React.FC = ():JSX.Element => {
     <aside className={`bg-white w-[280px] overflow-y-auto fixed top-0 left-0 bottom-0 border-r-[0.3px]`}>
       <div className="flex justify-between px-6">
         <CoreButton className="grid place-items-center my-1 h-10 w-10 text-gray-600 text-[22px] hover:bg-indigo-100" variant="light" pilled compact>
-          <FiSettings className="stroke-[2.5px] text-gray-500"/>
-        </CoreButton>
-        <CoreButton className="grid place-items-center my-1 h-10 w-10 text-gray-600 text-[22px] hover:bg-indigo-100" variant="light" pilled compact>
           { true ? <FiAlignLeft className="stroke-[2.5px] text-gray-500" /> : <FiAlignRight className="stroke-[2.5px]" /> }
         </CoreButton>
       </div>
