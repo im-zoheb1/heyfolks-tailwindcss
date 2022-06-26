@@ -1,0 +1,24 @@
+{
+  "files.autoSave": "afterDelay",
+  "editor.tabSize": 2,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "vetur.format.defaultFormatterOptions": {
+    "prettier": {
+      "singleQuote": true
+    }
+  },
+  "editor.cursorSmoothCaretAnimation": true,
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "files.insertFinalNewline": true,
+  // "editor.wordWrap": "on",
+  "prettier.printWidth": 160,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true
+  // "typescript.tsdk": "node_modules/typescript/lib"
+  // "editor.wrappingIndent": "same"
+  // "editor.wordWrapColumn": 180
+}
