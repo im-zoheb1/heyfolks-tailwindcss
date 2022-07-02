@@ -8,6 +8,7 @@ interface Props {
   children?: React.ReactNode;
   className?: string;
   transformOnHover?: boolean;
+  onClick?(e: React.MouseEvent): void
 }
 
 const Button: React.FC<Props> = (props: Props): JSX.Element => {
@@ -32,7 +33,7 @@ const Button: React.FC<Props> = (props: Props): JSX.Element => {
 
   const style: string = `${variant} ${spacing} ${border} ${defaultStyles} ${props.className} ${transform}`;
 
-  return <button className={style} type={props.type}>{props.children}</button>;
+  return <button className={style} type={props.type} onClick={props.onClick}>{props.children}</button>;
 };
 
 export default Button;

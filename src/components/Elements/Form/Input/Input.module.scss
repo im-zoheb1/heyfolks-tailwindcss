@@ -20,20 +20,17 @@
         @apply text-gray-500;
     }
 
-    &:valid:not(:placeholder-shown)~.input_border::after,
-    &:not(valid):not(:placeholder-show)~.input_border::before {
-        width: 100%;
-    }
-
-    &:focus:not(:valid)~.input_border::after,
-    &:focus:valid~.input_border::before {
+    &:focus:not(:valid) ~ .input_border::after,
+    &:focus:valid ~ .input_border::before {
         left: auto;
         width: 0;
         right: 0;
     }
 
-    &:focus:valid~.input_border::after,
-    &:focus:not(:valid)~.input_border::before {
+    &:focus:valid ~ .input_border::after,
+    &:focus:not(:valid) ~ .input_border::before,
+    &:valid:not(:placeholder-shown) ~ .input_border::after, 
+    &:not(:placeholder-shown):not(:valid) ~ .input_border::before {
         width: 100%;
     }
 
