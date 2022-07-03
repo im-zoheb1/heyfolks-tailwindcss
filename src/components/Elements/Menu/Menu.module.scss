@@ -1,10 +1,10 @@
 .menu { 
-  @apply bg-white w-[280px] overflow-y-auto fixed top-0 left-0 bottom-0 shadow-md pt-5;
+  @apply bg-white w-[280px] fixed top-0 left-0 bottom-0 shadow-md pt-5;
   &.collapsed {
     @apply flex flex-col items-center w-[75px];
   }
   &_minimizer {
-    @apply grid place-items-center my-1 mx-6 h-10 w-10 text-gray-700 text-[25px] hover:bg-indigo-100;
+    @apply text-xl text-slate-800 hover:bg-indigo-100 p-1 shadow-md border border-slate-200 absolute top-4 right-[-14px];
   }
   &.collapsed &_minimizer {
     @apply mx-0;
@@ -12,11 +12,7 @@
   &_user {
     @apply flex items-center my-4 ml-8;
     &_photo {
-      min-width: 50px;
-      min-height: 50px;
-      width: 50px;
-      height: 50px;
-      @apply rounded-full overflow-hidden ring-offset-2 ring-1 ring-slate-300;
+      @apply w-16 h-16 rounded-full overflow-hidden ring-offset-2 ring-1 ring-slate-300;
       & img {
         @apply w-full h-full object-cover;
       }
@@ -37,7 +33,7 @@
 }
 
 .nav {
-  @apply pt-1 w-full;
+  @apply pt-1 w-full overflow-y-auto;
   &_list {}
   &_item {}
   &_link {

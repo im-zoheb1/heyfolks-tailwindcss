@@ -7,7 +7,7 @@ const MainLayout: React.FC = (): JSX.Element => {
 
   return (
     <main className="flex bg-zinc-50 min-h-screen">
-      <CoreHeader />
+      <CoreHeader width={isCollapsed ? '75px' : '280px'} />
       <CoreMenu onToggle={(e) => setIsCollapsed(e)} />
       <section className="shadow-lg" style={{ paddingLeft: isCollapsed ? '75px': '280px' }}>
         <div className="p-6 mt-14">

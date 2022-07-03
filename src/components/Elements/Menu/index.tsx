@@ -12,8 +12,8 @@ import {
   FiSearch, 
   FiPenTool, 
   FiUser, 
-  FiAlignLeft,
-  FiAlignRight,
+  FiChevronRight,
+  FiChevronLeft
 } from 'react-icons/fi'
 
 interface Props {
@@ -51,15 +51,19 @@ const Menu: React.FC<Props> = (props):JSX.Element => {
           { isCollapsed ? <FiAlignRight className="stroke-[2.5px]" /> : <FiAlignLeft className="stroke-[2px] text-slate-800" /> }
         </CoreButton> */
       } 
+      <CoreButton pilled compact className={style.menu_minimizer} variant="light" onClick={handleToggle}>
+        { isCollapsed ? <FiChevronRight className="stroke-[2.5px]" /> : <FiChevronLeft className="stroke-[2.5px]" /> }
+      </CoreButton>
       <Link to="/" className={style.menu_user}> 
           <span className={style.menu_user_photo}>
             <img src={ProfileImage} />
           </span>
           <span className={style.menu_user_text}>
-            <div className="leading-none text-medium leading-none">Zohaib Khan</div>
-            <div className="text-gray-500 leadig-none">@im_zoheb1</div>
+            <div className="leading-none text-medium leading-none">Emilia Mark</div>
+            <div className="text-gray-500 leadig-none">@emilia_mark</div>
           </span>
       </Link>
+      <div className="border-t border-indigo-50 mx-8"></div>
       <nav className={style.nav}>
         <ul className={style.nav_list}>
           {
